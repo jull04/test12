@@ -39,6 +39,7 @@ body.page {
   display: inline-block;
   white-space: normal;
   word-wrap: break-word;
+  max-width: 1500px;
 }
 
 .text-block__image {
@@ -48,6 +49,10 @@ body.page {
   border-radius: 9999px;
   object-fit: cover;
   vertical-align: middle;
+}
+
+.text-block__image-small {
+  width: 160px;
 }
 
 .text-block__footer {
@@ -109,3 +114,11 @@ body.page {
     font-size: clamp(1.2rem, 5vw, 2rem);
   }
 }
+
+@media (max-width: 768px) {
+    .text-block__image {
+        height: 32px;
+        width: 160px;
+        margin: 5px 0;
+    }
+  }
